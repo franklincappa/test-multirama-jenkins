@@ -30,7 +30,7 @@ pipeline {
                     def contenedor = "${IMAGE_BASE}-${BRANCH}"
 
                     if (BRANCH == "master") {
-                        puerto = "5000"
+                        puerto = "5003"
                     } else if (BRANCH == "staging") {
                         puerto = "5002"
                     } else {
