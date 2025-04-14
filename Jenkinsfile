@@ -3,14 +3,14 @@ pipeline {
 
     environment {
         IMAGE_BASE = "test-multirama-jenkins"
-        GIT_REPO = "https://github.com/franklincappa/test-multirama-jenkins.git"
+        //GIT_REPO = "https://github.com/franklincappa/test-multirama-jenkins.git"
         BRANCH = "${env.BRANCH_NAME}"
     }
 
     stages {
         stage('Clonar Código') {
             steps {
-                git url: '${GIT_REPO}', branch: "${BRANCH}"
+                git url: 'https://github.com/franklincappa/test-multirama-jenkins.git', branch: "${BRANCH}"
             }
         }
 
